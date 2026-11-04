@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required minlength="2" autocomplete="name"
+                aria-describedby="fullNameHelp">
+            <small id="fullNameHelp">Enter at least 2 characters.</small>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="email" aria-describedby="emailHelp">
+            <small id="emailHelp">Enter a valid email address.</small>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="(?:050|051|052|053|054|055|058)[0-9]{7}"
+                autocomplete="tel" aria-describedby="phoneHelp">
+            <small id="phoneHelp">Enter a valid Israeli mobile number.</small>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ticket & Workshops</legend>
+
+            <label for="ticketType">Ticket Type:</label>
+            <select id="ticketType" name="ticketType" required aria-describedby="ticketTypeHelp">
+                <option value="">Choose a ticket</option>
+                <option value="standard">Standard</option>
+                <option value="vip">VIP</option>
+                <option value="student">Student</option>
+            </select>
+            <small id="ticketTypeHelp">Choose a ticket type.</small>
+
+            <br>
+
+            <input type="checkbox" id="webPerformance" name="workshops" value="web-performance">
+            <label for="webPerformance">Web Performance</label>
+
+            <input type="checkbox" id="accessibility" name="workshops" value="accessibility">
+            <label for="accessibility">Accessibility</label>
+
+            <input type="checkbox" id="testing" name="workshops" value="testing">
+            <label for="testing">Testing</label>
+
+            <br>
+
+            <input type="radio" id="dietNone" name="diet" value="none">
+            <label for="dietNone">None</label>
+
+            <input type="radio" id="dietVegan" name="diet" value="vegan">
+            <label for="dietVegan">Vegan</label>
+
+            <input type="radio" id="dietKosher" name="diet" value="kosher">
+            <label for="dietKosher">Kosher</label>
+
+            <input type="radio" id="dietHalal" name="diet" value="halal">
+            <label for="dietHalal">Halal</label>
+
+            <input type="radio" id="dietOther" name="diet" value="other">
+            <label for="dietOther">Other</label>
+
+            <br>
+
+            <label for="otherDiet">If you chose Other, please specify:</label>
+            <input type="text" id="otherDiet" name="otherDiet" aria-describedby="otherDietHelp">
+            <small id="otherDietHelp">Fill this field if you selected Other.</small>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Details</legend>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9](?: ?[0-9]){12,18}"
+                autocomplete="cc-number" aria-describedby="cardNumberHelp">
+            <small id="cardNumberHelp">Enter 13–19 digits. Spaces are allowed.</small>
+
+            <br>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="month" id="expiryDate" name="expiryDate" min="2026-10" autocomplete="cc-exp"
+                aria-describedby="expiryDateHelp">
+            <small id="expiryDateHelp">Choose this month or a later month.</small>
+
+            <br>
+
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" name="cvv" pattern="[0-9]{3,4}" autocomplete="cc-csc"
+                aria-describedby="cvvHelp">
+            <small id="cvvHelp">Enter 3 or 4 digits.</small>
+        </fieldset>
+
+        <fieldset>
+            <legend>Agreements</legend>
+
+            <label for="studentId">
+                If you selected Student ticket, please upload your Student ID:
+            </label>
+            <input type="file" id="studentId" name="studentId" accept=".pdf,.jpg,.jpeg,.png"
+                aria-describedby="studentIdHelp">
+            <small id="studentIdHelp">Accepted file types: PDF, JPG, JPEG or PNG.</small>
+
+            <br>
+
+            <input type="checkbox" id="TermsAndConditions" name="TermsAndConditions" required
+                aria-describedby="termsHelp">
+            <label for="TermsAndConditions">I agree to the Terms and Conditions</label>
+            <small id="termsHelp">You must agree to the Terms and Conditions.</small>
+        </fieldset>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+
+</html>

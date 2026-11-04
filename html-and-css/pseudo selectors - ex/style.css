@@ -1,0 +1,89 @@
+body{
+background: linear-gradient(to bottom, rgb(143, 201, 171), rgb(3, 137, 68));
+    
+}
+header{
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+    margin-left: 18vw;
+}
+header h1{
+    font-family: 'Isometra', sans-serif;
+    
+}
+header p{
+    font-family: arial, sans-serif;
+}
+
+.list-of-post{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 50%;
+    margin-left: 25vw;
+    margin-bottom: 50px;
+}
+.list-of-post .post{
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-of-post .post p::first-letter{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(3, 137, 68);
+}
+
+.list-of-post .post p::first-line{
+    font-weight: bold;
+}
+
+.delete-btn:hover{
+    background-color: #ff4d4d;
+}
+.post:has(.dark-toggle:checked) {
+    background-color: #222;
+    color: white;
+}
+
+
+#post1 {
+    font-family: 'Smooch Sans', sans-serif;
+}
+#post1 button{
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+#post2 {
+    font-family: 'Libre Caslon Condensed', serif;
+}
+#post2 button{
+    font-family: 'Libre Caslon Condensed', serif;
+}
+
+#post3 {
+    font-family: 'Oswald', sans-serif;
+}
+#post3 button{
+    font-family: 'Oswald', sans-serif;
+}
+
+#post4 {
+    font-family: 'Roboto Slab', serif;
+}
+#post4 button{
+    font-family: 'Roboto Slab', serif;
+}
+
+#post5 {
+    font-family: 'Edu QLD Hand', cursive;
+}
+#post5 button{
+    font-family: 'Edu QLD Hand', cursive;
+}
+

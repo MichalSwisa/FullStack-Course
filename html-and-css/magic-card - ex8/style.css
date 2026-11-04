@@ -1,0 +1,88 @@
+body h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-top: 20px;
+}
+
+.magic-card {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin: 20px auto;
+    animation: cardEntrance 2s ease-out, cardRotate 3s linear 2.5s infinite alternate;
+    ;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+@keyframes cardEntrance {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes cardRotate {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-20px, 0);
+    }
+
+    100% {
+        transform: translate(20px, 0);
+    }
+
+    /* 
+    from {
+        transform: translateX(-15px);
+    }
+
+    to {
+        transform: translateX(15px);
+    } */
+}
+
+.magic-card-out-class {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+
+    background-color: transparent;
+    margin: 20px auto;
+
+}
+
+.magic-card-out-class:hover {
+    transform: rotate(360deg);
+    transition: transform 1s ease;
+}
+
+.magic-card:hover {
+
+    color: #222;
+    background-color: #f0f0f0;
+    transition: background-color 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .magic-card {
+        animation: none;
+        transition: none;
+    }
+    .magic-card-out-class {
+        animation: none;
+        transition: none;
+    }
+}

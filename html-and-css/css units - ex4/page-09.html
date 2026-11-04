@@ -1,0 +1,43 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+    html {
+        font-size: 17px
+    }
+
+    body {
+        font-size: 16px
+    }
+
+    .panel {
+        width: 700px;
+        font-size: 1rem
+    }
+
+    .panel .title {
+        font-size: 2rem
+    }
+
+    .panel .content {
+        font-size: 1.25em
+    }
+
+    .panel .content p {
+        font-size: 0.8em
+    }
+
+    .pad {
+        padding-top: 10%
+    }
+</style>
+<div class="panel pad">
+    <div class="title">Title</div>
+    <div class="content">
+        <p>Paragraph</p>
+    </div>
+</div>
+<ol>
+    <li>Compute .panel .title font-size in px.   34px</li>
+    <li>Compute .panel .content p font-size in px.   17px</li>
+    <li>Compute .panel.pad padding-top in px.   94.2175px(according to devtool, because its computed based on the height of the parent element - body)</li>
+</ol>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חדשות</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        background-color: #20393D;
+        color: #fff;
+        padding: 10px 10px;
+        margin-bottom: 100px;
+        margin-right: 2px;
+        margin-left: 2px;
+
+    }
+
+    nav {
+        text-align: right;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 25px;
+        margin-left: 20px;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        font-weight: bold;
+    }
+
+    .news {
+        text-decoration-color: red;
+    }
+
+    .shul {
+        text-decoration-color: orange;
+    }
+
+    .politics {
+        text-decoration-color: blue;
+    }
+
+    .law {
+        text-decoration-color: green;
+    }
+
+    .music {
+        text-decoration-color: purple;
+    }
+
+    .health {
+        text-decoration-color: red;
+    }
+
+    .opinion {
+        text-decoration-color: orange;
+    }
+
+    .cars {
+        text-decoration-color: pink;
+    }
+
+    .tourism {
+        text-decoration-color: gray;
+    }
+
+    .business {
+        text-decoration-color: brown;
+    }
+
+    .recipes {
+        text-decoration-color: yellow;
+    }
+
+    .internet {
+        text-decoration-color: cyan;
+    }
+
+    .forums {
+        text-decoration-color: magenta;
+    }
+
+    .updates {
+        background-color: white;
+        margin-right: 2px;
+        margin-left: 2px;
+        margin-bottom: 30px;
+    }
+
+    .updates-header {
+        background-color: white;
+        border-bottom: 3px solid red;
+        width: 100%;
+        margin-right: 2px;
+        margin-left: 2px;
+        margin-bottom: 20px;
+    }
+
+    .updates-title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: 2px;
+        padding-bottom: 1px;
+        background-color: red;
+        color: white;
+    }
+
+    .all-updates {
+        font-size: 16px;
+        margin-right: 1260px;
+        color: #20393D;
+        font-weight: bold;
+    }
+
+    .arrow-all-updates {
+        font-size: 16px;
+        margin-right: 2px;
+        margin-left: 2px;
+        background-color: white;
+        color: red;
+    }
+
+    .logo img {
+        width: 28px;
+        height: 28px;
+        vertical-align: middle;
+    }
+
+    .updates-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .updates-content {
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .update-item {
+        display: inline-block;
+        width: 15%;
+        vertical-align: top;
+        text-align: right;
+        padding: 10px;
+        border-left: 2px solid #20393D;
+        font-weight: bold;
+        color: #20393D;
+    }
+
+    .update-item-last {
+        display: inline-block;
+        width: 15%;
+        vertical-align: top;
+        text-align: right;
+        padding: 10px;
+        font-weight: bold;
+        color: #20393D;
+    }
+
+    .time {
+        font-size: 14px;
+        color: white;
+        background-color: red;
+        padding: 2px 5px;
+        font-weight: bold;
+    }
+
+    .updates-bottom {
+        background-color: #f9f9f9;
+        margin-right: 2px;
+        margin-left: 2px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    .arrow-right {
+        display: inline-block;
+        background-color: #20393D;
+        color: white;
+        padding: 5px 5px;
+        margin-left: 3px;
+        margin-right: 8px;
+    }
+
+    .arrow-left {
+        display: inline-block;
+        background-color: #20393D;
+        color: white;
+        padding: 5px 5px;
+        margin-left: 8px;
+        margin-right: 3px;
+    }
+
+    .bottom-line {
+        margin-right: 2px;
+        margin-left: 2px;
+        display: inline-block;
+        width: 93%;
+        border-bottom: 6px solid #20393D;
+    }
+
+    .head-title {
+        float: right;
+        width: 49%;
+    }
+
+    .head-pic {
+        float: left;
+        width: 49%;
+    }
+
+    .head-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .title1 {
+        font-size: 20px;
+        font-weight: bold;
+        background-color: red;
+        color: white;
+        margin-top: 8px;
+        padding: 2px 5px;
+
+
+    }
+
+
+    .title2 {
+        font-size: 50px;
+        font-weight: bold;
+        background-color: #20393D;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    .title3 {
+        margin-top: 1px;
+        font-size: 50px;
+        font-weight: bold;
+        background-color: #20393D;
+        margin-top: 4px;
+        margin-bottom: 8px;
+        color: white;
+    }
+
+    .title4 {
+        font-size: 35px;
+        color: #20393D;
+
+    }
+
+    .title5 {
+        display: inline-block;
+        font-size: 16px;
+        color: #948787;
+        border-left: 1px solid #948787;
+        padding-left: 10px;
+    }
+
+    .title6 {
+        display: inline-block;
+        padding-right: 10px;
+        font-size: 16px;
+        color: #948787;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="header">
+            <nav>
+                <a href="index.html" class="logo"><img src="logo.png" alt="לוגו"></a>
+                <a href="p1" id="news" class="news">חדשות</a>
+                <a href="p2" id="shul" class="shul">בחצרות קודש</a>
+                <a href="p3" id="politics" class="politics">פוליטי-מדיני</a>
+                <a href="p4" id="law" class="law">משפט ופלילים</a>
+                <a href="p5" id="music" class="music">מוזיקה</a>
+                <a href="p6" id="health" class="health">בריאות</a>
+                <a href="p7" id="opinion" class="opinion">דעות</a>
+                <a href="p8" id="cars" class="cars">רכב</a>
+                <a href="p9" id="tourism" class="tourism">תיירות</a>
+                <a href="p10" id="business" class="business">עסקים ונדל"ן</a>
+                <a href="p11" id="recipes" class="recipes">מתכונים</a>
+                <a href="p12" id="internet" class="internet">רץ ברשת</a>
+                <a href="p13" id="forums" class="forums">פורומים</a>
+            </nav>
+        </div>
+    </section>
+
+
+    <section class="updates">
+        <div class="updates-header">
+            <a href="index.html" class="logo"><img src="logo.png" alt="לוגו"></a>
+            <span class="updates-title">מבזקים</span>
+            <span class="all-updates">לכל המבזקים</span>
+
+            <span class="arrow-all-updates">&#9664;</span>
+        </div>
+
+
+
+        <div class="updates-list">
+
+            <div class="update-item">
+                <span class="time">07:11</span>
+                <p>לאחר כחודש אותרה גופתו של תושב אופקים שטבע בכנרת</p>
+            </div>
+
+            <div class="update-item">
+                <span class="time">07:15</span>
+                <p>בכיר חמאס התראיין בטבח והבהיר את עמדתו</p>
+            </div>
+
+            <div class="update-item">
+                <span class="time">07:19</span>
+                <p>עומס חום ניכר ביום הצום: אזהרה על מזג האוויר</p>
+            </div>
+
+            <div class="update-item">
+                <span class="time">02.08.25</span>
+                <p>בתוך שעות: שני חשודים באירוע נעצרו במחוז חוף</p>
+            </div>
+
+            <div class="update-item">
+                <span class="time">02.08.25</span>
+                <p>שליח טראמפ למשפחות החטופים</p>
+            </div>
+
+            <div class="update-item-last">
+                <span class="time">02.08.25</span>
+                <p>גורמים פלסטינים: הקמפיין הרעב בעזה מסייע לעסקה</p>
+            </div>
+
+        </div>
+        <div class="updates-bottom">
+            <div class="bottom-line"></div>
+            <span class="arrow-right">&#9654;</span>
+            <span class="arrow-left">&#9664;</span>
+        </div>
+    </section>
+
+    <section>
+        <div class="head-title">
+            <div>
+                <p class="title1">בריאיון לאל ג'זירה</p>
+                <p class="title2">בכיר חמאס התרברב בטבח והבהיר:</p>
+                <p class="title3">הארגון לא ימסור את נשקו</p>
+                <p class="title4">הבכיר הבהיר כי "חמאס לא עומד למסור את נשקו אף לא כדור אחד שכן הנשק יישאר בידי הארגון
+                    "כל
+                    עוד הכיבוש נמצא בפלסטין" | על העסקה: "חמאס תמך בעסקה מלאה", והודה למדינות שמכירה במדינה פלסטינית -
+                    "תוצאה של ה־7.10"</p>
+                <p class="title5">יענקי פרבר</p>
+                <p class="title6">07:15</p>
+            </div>
+        </div>
+        <div class="head-pic">
+            <img class="head-image" src="pic.png" alt="כותרת ראשית"></img>
+        </div>
+
+    </section>
+</body>
+
+</html>

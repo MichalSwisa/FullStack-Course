@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>שליחת תלונה אנונימית</title>
+</head>
+
+<body>
+    <form class="central-container">
+        <!--action="submit_complaint.php" method="POST" -->
+        <h2>שליחת תלונה אנונימית</h2>
+        <div>
+            <select name="complaintType" id="complaintType" required>
+                <option value="">בחר סוג תלונה</option>
+                <option value="food">אוכל</option>
+                <option value="equipment">ציוד</option>
+                <option value="orders">פקודות</option>
+                <option value="other">אחר</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="complaintText" id="complaintText" placeholder="תוכן התלונה" required></textarea>
+        </div>
+        <div>
+            <button class="s-btn" type="submit">שלח</button>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

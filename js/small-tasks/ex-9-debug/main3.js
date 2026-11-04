@@ -1,0 +1,5 @@
+
+import { getPendingTasks } from "./todo3.js";
+
+console.log(getPendingTasks()); // Should only show tasks that are NOT completed
+

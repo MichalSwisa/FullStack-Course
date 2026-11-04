@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+}
+
+
+
+.m-logo-head {
+    background-color: #20393D;
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    direction: rtl;
+    box-sizing: border-box;
+    padding: 10px 11%;
+}
+
+.m-logo img {
+    width: auto;
+    height: 90px;
+    display: block;
+}
+.m-logo {
+    align-self: flex-start;
+    
+}
+.m-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.m-data p {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-left: 12px;
+    border-left: 1px solid #496065;
+    font-size: 17px;
+}
+
+.m-data i {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+.m-header {
+    width: 78%;
+    margin: 5px auto 0;
+    background-color: #20393D;
+}
+
+.m-header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+    height: 36px;
+}
+
+.m-header nav a {
+    color: white;
+    font-size: 17px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    padding: 0 0.05%;
+    white-space: nowrap;
+}
+
+.m-header nav img {
+    width: 20px;
+    height: 20px;
+}
+
+.m-header nav a:not(:last-child) {
+    border-left: 1px solid #496065;
+}
+
+
+
+
+#m-news {
+    text-decoration-color: red;
+}
+
+#m-shul {
+    text-decoration-color: orange;
+}
+
+#m-politics {
+    text-decoration-color: blue;
+}
+
+#m-law {
+    text-decoration-color: green;
+}
+
+#m-music {
+    text-decoration-color: purple;
+}
+
+#m-recipes {
+    text-decoration-color: yellow;
+}
+
+#m-internet {
+    text-decoration-color: cyan;
+}
+
+#m-forums {
+    text-decoration-color: magenta;
+}
+
+#m-tourism {
+    text-decoration-color: gray;
+}
+
+#m-business {
+    text-decoration-color: brown;
+}
+
+#m-recipes {
+    text-decoration-color: yellow;
+}
+
+#m-internet {
+    text-decoration-color: cyan;
+}
+
+#m-forums {
+    text-decoration-color: magenta;
+}
+
+#m-tourism {
+    text-decoration-color: gray;
+}
+
+
+
+.m-special-header {
+    width: 78%;
+    margin: 5px auto 0;
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #6c7172;
+    height: 36px;
+}
+
+.m-special-header nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.m-special-header nav a {
+    color: #20393D;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+.m-special-header .m-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 15px;
+    color: #20393D;
+}
+
+
+
+.m-special-header i {
+    font-size: 20px;
+    color: #20393D;
+}
+
+
+.m-ads {
+    width: 9%;
+    position: fixed;
+    top: 105px;
+}
+
+.m-ads:first-child {
+    right: 0;
+}
+
+.m-ads:last-child {
+    left: 0;
+}
+
+#m-ad1,
+#m-ad2 {
+    width: 100%;
+    height: auto;
+    right: 0;
+}
+
+#m-header {
+    position: sticky;
+    top: 0;
+}
+
+
+.m-final {
+    width: 78%;
+    margin: 5px auto 0;
+    background-color: rgb(189, 29, 29);
+    margin-bottom: 8px;
+}
+
+.m-final nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+    direction: rtl;
+    height: 40px;
+    
+}
+
+.m-final nav a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+    margin: 0;
+    padding: 0 13px;
+    white-space: nowrap;
+}
+
+
+
+.m-final nav a:not(:last-child) {
+    border-left: 1px solid white;
+}
+.m-bottom-line{
+    width: 78%;
+    border-bottom: 1px solid rgb(189, 29, 29);
+       margin: 15px auto 30px;
+}
