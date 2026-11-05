@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Easy Math",
+    "taskDescription": "What is 5 + 3?",
+    "correctAnswer": "8",
+    "difficultyLevel": "easy",
+    "timeLimit": 30,
+    "hint": "It's a single-digit number."
+  },
+  {
+    "id": 2,
+    "name": "Easy Math",
+    "taskDescription": "What is 5 + 4?",
+    "correctAnswer": "9",
+    "difficultyLevel": "easy",
+    "timeLimit": 30,
+    "hint": "It's a single-digit not divide by 2 number."
+  },
+  {
+    "id": 3,
+    "name": "Easy Math",
+    "taskDescription": "What is 2 + 3?",
+    "correctAnswer": "5",
+    "difficultyLevel": "easy",
+    "timeLimit": 30,
+    "hint": "It's a single-digit number."
+  },
+  {
+    "id": 4,
+    "name": "Mystery",
+    "taskDescription": "I speak without a mouth. What am I?",
+    "correctAnswer": "echo",
+    "difficultyLevel": "medium",
+    "timeLimit": 45,
+    "hint": "It's a phenomenon that occurs when sound waves reflect off surfaces."
+  },
+  {
+    "id": 5,
+    "name": "JavaScript Basics",
+    "taskDescription": "Which keyword is used to declare a constant in JavaScript?",
+    "correctAnswer": "3",
+    "difficultyLevel": "hard",
+    "timeLimit": 60,
+    "hint": "It's a keyword that is block-scoped and cannot be reassigned.",
+    "choices": [
+      "var",
+      "let",
+      "const",
+      "static"
+    ]
+  },
+  {
+    "id": "0e0bce91-2736-4512-9c16-bc35c3a9b61e",
+    "name": "Hard Math",
+    "taskDescription": "what is 12 x12",
+    "correctAnswer": "144",
+    "difficultyLevel": "hard",
+    "timeLimit": 60,
+    "hint": "njnjnj"
+  },
+  {
+    "id": "7a27a8b8-ef0d-40ec-8fd0-7e4efcffb1f7",
+    "name": "gggg",
+    "taskDescription": "gggg",
+    "correctAnswer": "gg",
+    "difficultyLevel": "medium",
+    "timeLimit": 34,
+    "hint": "444"
+  },
+  {
+    "id": "5d7fe597-69ee-452b-9b6e-ad534c13f6b0",
+    "name": "jstest",
+    "taskDescription": "const",
+    "correctAnswer": "3",
+    "difficultyLevel": "easy",
+    "timeLimit": 30,
+    "hint": "c",
+    "choices": [
+      "var",
+      "let",
+      "const",
+      "static"
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "9daea54e-4a50-4c78-a1c7-c666d8ce6b98",
+        "name": "TestPlayer2026",
+        "difficultyLevel": "easy",
+        "solvedRiddles": [
+            {
+                "id": "5d7fe597-69ee-452b-9b6e-ad534c13f6b0",
+                "time": 7970
+            },
+            {
+                "id": 1,
+                "time": 12218
+            },
+            {
+                "id": 2,
+                "time": 3453
+            },
+            {
+                "id": 3,
+                "time": 4304
+            }
+        ],
+        "times": [
+            7970,
+            12218,
+            3453,
+            4304
+        ],
+        "lowestTime": 3453
+    },
+    {
+        "id": "154906ab-cbe4-44c4-bbf0-53d0d7bcd611",
+        "name": "test",
+        "difficultyLevel": "none",
+        "solvedRiddles": [
+            {
+                "id": "0e0bce91-2736-4512-9c16-bc35c3a9b61e",
+                "time": 3510
+            },
+            {
+                "id": "5d7fe597-69ee-452b-9b6e-ad534c13f6b0",
+                "time": 41182
+            }
+        ],
+        "times": [
+            3510,
+            41182
+        ],
+        "lowestTime": 3510
+    },
+    {
+        "id": "4148e392-be26-4ebf-8c72-9883b0b9d5c7",
+        "name": "njj",
+        "difficultyLevel": "none",
+        "solvedRiddles": [
+            {
+                "id": 3,
+                "time": 2321
+            }
+        ],
+        "times": [
+            2321
+        ],
+        "lowestTime": 2321
+    },
+    {
+        "id": "abe8772b-5626-4bcb-bd73-79d03f461df2",
+        "name": "njvf\\",
+        "difficultyLevel": "none",
+        "solvedRiddles": [
+            {
+                "id": "0e0bce91-2736-4512-9c16-bc35c3a9b61e",
+                "time": 1897
+            }
+        ],
+        "times": [
+            1897
+        ],
+        "lowestTime": 1897
+    }
+]
